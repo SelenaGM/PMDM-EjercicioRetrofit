@@ -1,9 +1,13 @@
 package com.example.pmdm_ejercicioretrofit.modelos;
 
-public class Datos{
+import com.google.gson.annotations.SerializedName;
+
+public class DataItem{
+	@SerializedName(value = "last_name")
 	private String lastName;
 	private int id;
 	private String avatar;
+	@SerializedName(value = "first_name")
 	private String firstName;
 	private String email;
 
@@ -50,7 +54,7 @@ public class Datos{
 	@Override
  	public String toString(){
 		return 
-			"Datos{" + 
+			"DataItem{" + 
 			"last_name = '" + lastName + '\'' + 
 			",id = '" + id + '\'' + 
 			",avatar = '" + avatar + '\'' + 
